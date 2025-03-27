@@ -16,5 +16,5 @@ def calcular(entrada):
     resultado = int(texto) if texto != "" else 0
     print(resultado)
 
-entrada = int(input("Digite um valor: "))
+entrada = quadradoNumero("Digite um valor: ")
 calcular(entrada)
