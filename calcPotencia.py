@@ -7,12 +7,13 @@ def quadradoNumero(mensagem):
         print("Digite um valor válido!")
 
 def calcular(entrada):
-    resultado = ""
+    texto = ""
     while entrada > 0:
         digito = entrada % 10
-        resultado = str(pow(digito,2)) + resultado
+        texto = str(pow(digito,2)) + texto
         entrada //= 10
-        
+
+    resultado = int(texto) if texto != "" else 0
     print(resultado)
 
 entrada = int(input("Digite um valor: "))
